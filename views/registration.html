@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration - ICMBNT 2025</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">ICMBNT 2025</div>
+        <button class="menu-toggle">☰</button>
+        <ul class="nav-links">
+            <li><a href="home.html#home">Home</a></li>
+            <li><a href="about.html#about">About</a></li>
+            <li><a href="call_for_papers.html#call-for-papers">Call for Papers</a></li>
+            <li><a href="submission.html#submission">Submission</a></li>
+            <li><a href="#registration">Registration</a></li>
+            <li><a href="contact.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Registration Section -->
+    <section id="registration" class="section">
+        <h2 class="centered-title animate-fade">Registration</h2>
+        <div class="registration-content animate-fade">
+            <h3>Conference Fees</h3>
+            <p>(Excluding Publication Fee)</p>
+            <table>
+                <tr>
+                    <th>Category</th>
+                    <th>Fee</th>
+                </tr>
+                <tr>
+                    <td>Research Scholars/Students</td>
+                    <td>2700 INR</td>
+                </tr>
+                <tr>
+                    <td>Academicians</td>
+                    <td>3000 INR</td>
+                </tr>
+                <tr>
+                    <td>Industry and Others</td>
+                    <td>4000 INR</td>
+                </tr>
+                <tr>
+                    <td>Foreign Authors</td>
+                    <td>100 USD</td>
+                </tr>
+            </table>
+
+            <h3>Registration Details</h3>
+            <p>Participants are requested to register for the Conference. The Conference fee must be paid either through Demand Draft (DD) or online payment with the following bank account details:</p>
+            <ul>
+                <li><strong>Bank A/C Name:</strong> MELANGE PUBLICATIONS</li>
+                <li><strong>Bank A/C No:</strong> 736805000791</li>
+                <li><strong>Bank Name:</strong> ICICI BANK</li>
+                <li><strong>Branch:</strong> VILLIANUR, PUDUCHERRY</li>
+                <li><strong>IFSC Code:</strong> ICIC0007368</li>
+                <li><strong>SWIFT Code:</strong> ICICINBBCTS</li>
+            </ul>
+
+            <h3 class="centered-title">Register Now</h3>
+<div class="card">
+    <form id="registration-form" class="registration-form">
+        <div class="form-group">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <span class="error-message"></span>
+        </div>
+        <div class="form-group">
+            <input type="email" name="email" placeholder="Your Email" required>
+            <span class="error-message"></span>
+        </div>
+        <div class="form-group">
+            <select name="category" id="category" required>
+                <option value="" disabled selected>Select Category</option>
+                <option value="research">Research Scholars/Students</option>
+                <option value="academicians">Academicians</option>
+                <option value="industry">Industry and Others</option>
+                <option value="foreign">Foreign Authors</option>
+            </select>
+            <span class="error-message"></span>
+        </div>
+        <div class="upload-section">
+            <label for="payment-proof">Upload Payment Proof:</label>
+            <input type="file" id="payment-proof" name="payment-proof" accept="image/*, .pdf">
+            <div id="preview" class="preview"></div>
+        </div>
+        <button type="submit" class="btn">Submit Registration</button>
+    </form>
+</div>
+
+            <br><br>
+            <h3>Additional Instructions</h3>
+            <p>After making your payment, download the Registration Form and Copyright Form, fill them out, and email them to <a href="mail to:icmbnt2025@gmail.com">icmbnt2025@gmail.com</a> along with your payment information. The payee is accountable for all bank charges.</p>
+            <br><br><p><strong>Note:</strong> The authors who are interested in publishing their articles in Scopus / WOS will be charged an extra fee based on the journal.</p>
+            <p>Conference fee includes Conference kit, Certificate, Proceedings, Non-Scopus Journal & lunch with refreshments. These fees do not include accommodation.</p>
+            <p><a href="/download-pdf" class="btn download-btn">Download Registration & Copyright Forms</a></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Society for Cyber Intelligent Systems | Melange Publications</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

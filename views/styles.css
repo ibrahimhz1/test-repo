@@ -1,0 +1,656 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #1a2a6c;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.nav-links a:hover {
+    color: #b3cde0;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 100vh;
+    color: #f4a261 ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: right;
+    text-align: right;
+    padding: 0 20px;
+    overflow: hidden;
+}
+
+.background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+}
+
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.countdown {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #f4a261;
+}
+
+.cta-buttons .btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #f4a261;
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.cta-buttons .btn:hover {
+    background-color: #e76f51;
+}
+
+/* General Section Styling */
+.section {
+    padding: 60px 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #1a2a6c;
+}
+
+.section .centered-title {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.section h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #1a2a6c;
+}
+
+.section p, .section ul {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #333;
+}
+
+.section ul {
+    list-style: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+/* Animation */
+.animate-fade {
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Registration Content */
+.registration-content {
+    text-align: left;
+}
+
+/* Registration Form */
+.registration-form {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.registration-form input, .registration-form select, .registration-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: border-color 0.3s;
+}
+
+.registration-form input:focus, .registration-form select:focus, .registration-form textarea:focus {
+    border-color: #f4a261;
+    outline: none;
+}
+
+.registration-form select {
+    appearance: none;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="5" viewBox="0 0 10 5"><path fill="%231a2a6c" d="M0 0h10L5 5z"/></svg>') no-repeat right 10px center;
+    background-size: 10px;
+}
+
+.error-message {
+    display: block;
+    color: #e76f51;
+    font-size: 0.9em;
+    margin-top: 5px;
+    height: 20px;
+}
+
+.registration-form .upload-section {
+    margin-bottom: 20px;
+}
+
+.registration-form .upload-section label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1.1em;
+}
+
+.registration-form input[type="file"] {
+    padding: 5px;
+}
+
+.preview {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px dashed #ccc;
+    border-radius: 5px;
+    text-align: center;
+    color: #666;
+}
+
+.preview img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Venue Info */
+.venue-info {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.venue-info p {
+    margin-bottom: 10px;
+}
+
+.venue-info strong {
+    color: #1a2a6c;
+}
+
+.map-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Registration Table */
+.section table {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+.section th, .section td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+.section th {
+    background-color: #1a2a6c;
+    color: white;
+}
+
+/* Contact Section */
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.contact-info, .contact-form {
+    flex: 1;
+    min-width: 300px;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+}
+
+.contact-info strong {
+    color: #1a2a6c;
+}
+
+.contact-form h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #1a2a6c;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form .btn {
+    background-color: #f4a261;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form .btn:hover {
+    background-color: #e76f51;
+}
+
+/* Download Button */
+.download-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #1a2a6c;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.download-btn:hover {
+    background-color: #b3cde0;
+    color: #1a2a6c;
+}
+
+/* Footer */
+footer {
+    background-color: #1a2a6c;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #1a2a6c;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    .countdown {
+        font-size: 1.2em;
+    }
+
+    .cta-buttons .btn {
+        padding: 10px 20px;
+        font-size: 0.9em;
+    }
+
+    .section {
+        padding: 40px 20px;
+    }
+
+    .section h2 {
+        font-size: 1.5em;
+    }
+
+    .section .centered-title {
+        font-size: 2em;
+    }
+
+    .registration-form {
+        max-width: 100%;
+    }
+
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .contact-info, .contact-form {
+        min-width: 100%;
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+header {
+    background-color: #002147;
+    padding: 15px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.call-for-papers {
+    text-align: center;
+    padding: 50px;
+}
+
+.paper-categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+}
+
+.category {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    transition: 0.3s;
+}
+
+.category img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.category h3 {
+    margin: 15px 0;
+    color: #002147;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #ff6600;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #cc5200;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #002147;
+    color: white;
+}
+
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Centered Titles */
+.centered-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Submission Section */
+.submission-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Form Styles */
+.submission-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="file"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* File Upload Preview */
+.preview {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Submit Button */
+.btn {
+    background-color: #ff6600;
+    color: white;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #cc5200;
+}
+
+
+.centered-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Card Styling */
+.card {
+    background: #fff;
+    padding: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Styling the Form */
+.registration-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Upload Section */
+.upload-section {
+    margin-bottom: 15px;
+}
+
+/* Submit Button */
+.btn {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.centered-title {
+    text-align: center;
+}
+
+.centered-content {
+    text-align: left;
+    list-style: none;
+    padding: 0;
+}
+
+.speakers-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.speaker-card {
+    text-align: center;
+}

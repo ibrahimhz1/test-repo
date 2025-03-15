@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paper Submission - ICMBNT 2025</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">ICMBNT 2025</div>
+        <button class="menu-toggle">☰</button>
+        <ul class="nav-links">
+            <li><a href="home.html#home">Home</a></li>
+            <li><a href="about.html#about">About</a></li>
+            <li><a href="call_for_papers.html#call-for-papers">Call for Papers</a></li>
+            <li><a href="#submission">Submission</a></li>
+            <li><a href="registration.html#registration">Registration</a></li>
+            <li><a href="contact.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Submission Section -->
+    <section id="submission" class="section">
+        <h2 class="centered-title animate-fade">Paper Submission</h2>
+        <div class="submission-content animate-fade">
+            <p>We invite scholars, researchers, and professionals to submit their insightful papers and abstracts. Join us in building a platform that celebrates diverse perspectives and fosters collaboration across a spectrum of research domains.</p>
+            
+            <br><h3>Submission Guidelines</h3>
+            <ul>
+                <li>The manuscript must be within 12 pages and in double-column format.</li>
+                <li>Include the paper title, author(s) details, affiliations, email, and keywords on the first page.</li>
+                <li>All submissions will be screened for plagiarism. Any identified plagiarism will result in rejection.</li>
+                <li>Accepted manuscripts must follow reviewer suggestions before final submission.</li>
+                <li>Final camera-ready papers must be submitted before the deadline.</li>
+            </ul>
+            
+            <h3>Important Dates</h3>
+            <ul>
+                <li>Manuscript Submission Deadline: <strong>15 March 2025</strong></li>
+                <li>Acceptance Notification: <strong>25 March 2025</strong></li>
+                <li>Final Registration Date: <strong>5 April 2025</strong></li>
+                <li>Conference Dates: <strong>26-27 April 2025</strong></li>
+            </ul>
+            
+            <h3>Submit Your Paper</h3>
+            <p>Authors must submit their manuscripts via email to: <a href="mailto:icmbnt2025@gmail.com">icmbnt2025@gmail.com</a></p>
+            
+            <br><h3>File Upload</h3>
+            <form id="submission-form" class="submission-form">
+                <div class="form-group">
+                    <label for="author-name">Your Name:</label>
+                    <input type="text" id="author-name" name="author-name" placeholder="Enter your name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="paper-title">Paper Title:</label>
+                    <input type="text" id="paper-title" name="paper-title" placeholder="Enter paper title" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="paper-upload">Upload Paper (PDF only):</label>
+                    <input type="file" id="paper-upload" name="paper-upload" accept=".pdf" required>
+                    <div id="paper-preview" class="preview"></div>
+                </div>
+
+                <button type="submit" class="btn">Submit Paper</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Society for Cyber Intelligent Systems | Melange Publications</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
