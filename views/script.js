@@ -137,7 +137,7 @@ if (window.location.pathname.includes('registration.html')) {
             formData.append('file', this['payment-proof'].files[0]);  // Attach file
 
             try {
-                const response = await fetch('http://localhost:5230/register', {
+                const response = await fetch('/register', {
                     method: 'POST',
                     body: formData
                 });
@@ -202,7 +202,7 @@ if (window.location.pathname.includes('submission.html')) {
         e.preventDefault();
         const formData = new FormData(this);
 
-        fetch("http://localhost:5230/submit", {
+        fetch("/submit", {
             method: "POST",
             body: formData
         })
